@@ -5,7 +5,8 @@ const counter = {
   user: { name: "", age: 0 },
 
   fill() {
-    // ваш код
+    this.user.name = "Karina";
+    this.user.age = 28;
   },
 
   log() {
@@ -13,7 +14,8 @@ const counter = {
   },
 };
 
-const fill = counter.fill;
-fill();
+/*const fill = counter.fill();
+fill();*/
+counter.fill();
 
 counter.log();
