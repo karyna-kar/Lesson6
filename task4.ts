@@ -14,8 +14,7 @@ const counter = {
   },
 };
 
-/*const fill = counter.fill();
-fill();*/
-counter.fill();
+const fill = counter.fill.bind(counter);
+fill();
 
 counter.log();
